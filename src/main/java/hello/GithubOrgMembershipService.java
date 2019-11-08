@@ -51,11 +51,11 @@ public class GithubOrgMembershipService implements MembershipService {
 
      /** check membership
      * @param roleToTest roletotest
-     * @param oAuth2AuthenticationToken oauth token 
+     * @param oauthToken oauth token 
      * @return is current logged in user a member but NOT an admin of the github org?
      * */   
 
-    public boolean hasRole(OAuth2AuthenticationToken oAuth2AuthenticationToken, String roleToTest) {
+    public boolean hasRole(OAuth2AuthenticationToken oauthToken, String roleToTest) {
         if (oauthToken == null) {
             return false;
         }
