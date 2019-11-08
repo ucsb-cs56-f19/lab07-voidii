@@ -49,14 +49,13 @@ public class GithubOrgMembershipService implements MembershipService {
         return hasRole(oAuth2AuthenticationToken, "admin");
     }
 
-    /**
-     * is current logged in user has role
-     * 
-     * @param roleToTest "member" or "admin"
-     * @return if the current logged in user has that role
-     */
+     /** check membership
+     * @param roleToTest roletotest
+     * @param oAuth2AuthenticationToken oauth token 
+     * @return is current logged in user a member but NOT an admin of the github org?
+     * */   
 
-    public boolean hasRole(OAuth2AuthenticationToken oauthToken, String roleToTest) {
+    public boolean hasRole(OAuth2AuthenticationToken oAuth2AuthenticationToken, String roleToTest) {
         if (oauthToken == null) {
             return false;
         }
