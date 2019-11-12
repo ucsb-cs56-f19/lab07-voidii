@@ -1,3 +1,6 @@
+web page for javadoc and jacoco report: https://ucsb-cs56-f19.github.io/lab07-voidii/
+
+
 A simple Spring Boot webapp using:
 * Thymeleaf templating
 * Pulling in Bootstrap from CDN.
