@@ -4,12 +4,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import hello.geojson.FeatureCollection;
+import java.util.List;
 
 
 public class FeatureCollection {
   public String type;
   private static Logger logger = LoggerFactory.getLogger(FeatureCollection.class);
   public Metadata metadata;
+  public List<Feature> features;
+
    /**
      * Create a FeatureCollection object from json representation
      * 
