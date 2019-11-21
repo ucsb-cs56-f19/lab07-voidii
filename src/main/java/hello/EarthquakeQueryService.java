@@ -3,8 +3,6 @@ package hello;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-package hello;
-
 import java.util.Arrays;
 
 
