@@ -1,4 +1,5 @@
 web page for javadoc and jacoco report: https://ucsb-cs56-f19.github.io/lab07-voidii/
+Travis ic: https://travis-ci.org/ucsb-cs56-f19/lab07-voidii
 
 
 A simple Spring Boot webapp using:
